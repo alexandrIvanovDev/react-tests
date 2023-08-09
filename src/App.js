@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import {Users} from './users/Users';
 
 function App() {
     const [data, setData] = useState(null)
@@ -26,6 +27,7 @@ function App() {
                 data-testid='input'
                 onChange={(e) => setValue(e.target.value)}
             />
+            <Users/>
         </div>
     );
 }
